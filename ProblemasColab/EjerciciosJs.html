@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios Colaboracion</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <script src="Problema3.js"></script>
 <script src="Problema1.js"></script>
@@ -69,50 +70,49 @@
             <h4>Leer tres numeros diferentes e imprimir el numero mayor de 
                 los tres.</h4>
             <div class="contenedor-contenido">
-                <form method="post" name="formulario2" action="">
-                    <table class="tabla-problema">
-                        <tbody>
-                            <!-- Inputs -->
-                            <tr> 
-                                <td><label>Introduzca un numero: </label></td>
-                                <td><input type="number" id="num1" 
-                                    nombre="num1" class="input_text"> </td>
-                            </tr>
-                            <tr>
-                                <td><label>Introduzca un numero: </label></td>
-                                <td><input type="number" id="num2" 
-                                    nombre="num2" class="input_text"> </td> 
-                            </tr>
-                            <tr>
-                                <td><label>Introduzca un numero: </label></td>
-                                <td><input type="number" id="num3" 
-                                    nombre="num3" class="input_text"> </td> 
-                            </tr>
-                            <!-- Input muestra el numero mayor -->
-                            <tr>
-                                <td><label>El numero mayor es: </label></td>
-                                <td><input type="text" name="resultado"
-                                    id="resultado" readonly="readonly" 
-                                    class="input_text" ></td>
-                            </tr>
-                            <!-- Botones metodos para js "Problema2()" y "borrard_p2()" -->
-                            <tr>
-                                <td></td>
-                                <td> <input type="button" value="Encontrar"
-                                    onclick="Problema2()" name="mostrarResultados"
-                                    class="input_button"> </td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><input type="button" value="Borrar Datos" 
-                                    name="borrar" onclick="borrard_p2()" 
-                                    class="input_button"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </form>
-            </div>
-        </div>
+<form method="post" name="formulario2" action="">
+    <table class="tabla-problema">
+        <tbody>
+            <!-- Inputs -->
+            <tr> 
+                <td><label>Introduzca un numero: </label></td>
+                <td><input type="number" id="num1" 
+                    nombre="num1" class="input_text"> </td>
+            </tr>
+            <tr>
+                <td><label>Introduzca un numero: </label></td>
+                <td><input type="number" id="num2" 
+                    nombre="num2" class="input_text"> </td> 
+            </tr>
+            <tr>
+                <td><label>Introduzca un numero: </label></td>
+                <td><input type="number" id="num3" 
+                    nombre="num3" class="input_text"> </td> 
+            </tr>
+           <!-- Input muestra el resultado -->
+            <tr>
+                <td><label>Resultado: </label></td>
+                <td><div id="resultado"></div> </td>
+            </tr>
+            </tr>
+            <!-- Botones metodos para js "Problema2()" y "borrard_p2()" -->
+            <tr>
+                <td></td>
+                <td> <input type="button" value="Encontrar"
+                    onclick="Problema2()" name="mostrarResultados"
+                    class="input_button"> </td>
+            </tr>
+            <tr>
+                <td></td>
+               <td><input type="reset" value="Borrar Datos" 
+                    name="borrar"  
+                    class="input_button"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+</div>
+</div>
         <!-- Ejercicio 3 -->
         <div class="contenedor-problema">
             <h2>Ejercicio 3</h2>
