@@ -48,11 +48,12 @@ td{
 
 .input_text{
    width: 70%;
-    color: rgba(235, 228, 228, 0.7);
+    color: rgb(0, 0, 0, 0.7);
     font-family: monospace;
     border: 1px solid #7cc1e4;
     border-radius: 5px;
     padding: 1px;
     margin-top: 5px;
 }
+  
   
